@@ -1,10 +1,6 @@
-**technical specification** for setting up your GitHub-based supplement to *“Wearing a Fur Coat in the Summertime”*. This specification assumes the repository will serve as a **structured, modular, interactive supplement** to the paper—supporting reuse, transparency, and engagement with readers and researchers.
+# 🧾 Technical Specification: GitHub Supplement Repository to *“Wearing a Fur Coat in the Summertime”*
 
----
-
-## 🧾 Technical Specification: GitHub Supplement Repository
-
-### 📁 Directory Structure
+## 📁 Directory Structure
 
 ```text
 /

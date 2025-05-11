@@ -1,0 +1,151 @@
+{
+  "FileMetaInformation": {
+    "MediaStorageSOPClassUID": "1.2.840.10008.5.1.4.1.1.77.1.6",
+    "MediaStorageSOPInstanceUID": "1.2.840.10008.1.2.3.4.20250511121314.320202",
+    "TransferSyntaxUID": "1.2.840.10008.1.2.1",
+    "ImplementationClassUID": "1.2.3.4.5.6.7.8.9",
+    "ImplementationVersionName": "DICOM-WSI-DEMO"
+  },
+  "PatientModule": {
+    "PatientName": "Johnson^Mark",
+    "PatientID": "1419610",
+    "PatientBirthDate": "19540608",
+    "PatientSex": "M",
+    "PatientAddress": "819 Johnson Course, East William, AK 74064"
+  },
+  "ClinicalTrialSubjectModule": {
+    "ClinicalTrialSponsorName": "ACME Research",
+    "ClinicalTrialProtocolID": "PATHOLOGY-2025-001",
+    "ClinicalTrialProtocolName": "Advanced Digital Pathology Workflow Study"
+  },
+  "GeneralStudyModule": {
+    "StudyInstanceUID": "1.2.840.10008.1.2.3.4.20250511121314.120202",
+    "StudyDate": "20250511",
+    "StudyTime": "121314",
+    "ReferringPhysicianName": "Smith^John",
+    "StudyID": "ST9465",
+    "AccessionNumber": "A20250511-5012",
+    "StudyDescription": "Liver biopsy, suspected carcinoma"
+  },
+  "PatientStudyModule": {
+    "AdmittingDiagnosesDescription": "Suspected hepatocellular carcinoma"
+  },
+  "GeneralSeriesModule": {
+    "Modality": "SM",
+    "SeriesInstanceUID": "1.2.840.10008.1.2.3.4.20250511121314.220202",
+    "SeriesNumber": "1",
+    "SeriesDescription": "H&E stained slide"
+  },
+  "FrameOfReferenceModule": {
+    "FrameOfReferenceUID": "1.2.840.10008.1.2.3.4.20250511121314.420202"
+  },
+  "GeneralEquipmentModule": {
+    "Manufacturer": "ACME Digital Pathology",
+    "ManufacturerModelName": "ACME WSI Scanner 3000",
+    "SoftwareVersions": "1.0"
+  },
+  "GeneralImageModule": {
+    "InstanceNumber": "1",
+    "PatientOrientation": "",
+    "ContentDate": "20250511",
+    "ContentTime": "121314",
+    "ImageType": [
+      "ORIGINAL",
+      "PRIMARY"
+    ]
+  },
+  "ImagePixelModule": {
+    "SamplesPerPixel": 3,
+    "PhotometricInterpretation": "RGB",
+    "PlanarConfiguration": 0,
+    "Rows": 40000,
+    "Columns": 30000,
+    "BitsAllocated": 8,
+    "BitsStored": 8,
+    "HighBit": 7,
+    "PixelRepresentation": 0
+  },
+  "WholeSlideMicroscopyImageModule": {
+    "ImagedVolumeWidth": 15.0,
+    "ImagedVolumeHeight": 15.0,
+    "ImagedVolumeDepth": 0.004,
+    "TotalPixelMatrixColumns": 40000,
+    "TotalPixelMatrixRows": 30000,
+    "OpticalPathSequence": [
+      {
+        "OpticalPathIdentifier": "1",
+        "OpticalPathDescription": "Brightfield illumination",
+        "IlluminationTypeCodeSequence": {
+          "CodeValue": "111741",
+          "CodingSchemeDesignator": "DCM",
+          "CodeMeaning": "Brightfield illumination"
+        },
+        "LuminanceOfSingleReferencePercent": 70.0
+      }
+    ]
+  },
+  "SpecimenModule": {
+    "SpecimenDescriptionSequence": [
+      {
+        "SpecimenIdentifier": "SP-46048",
+        "SpecimenUID": "1.2.840.10008.1.2.3.4.20250511121314.520202",
+        "SpecimenShortDescription": "Liver biopsy",
+        "SpecimenDetailedDescription": "Liver biopsy from segment 7",
+        "SpecimenPreparationSequence": [
+          {
+            "PreparationType": "FORMALIN FIXED PARAFFIN EMBEDDED",
+            "StainingMethod": "H&E"
+          }
+        ]
+      }
+    ]
+  },
+  "AnnotationModule": {
+    "GraphicAnnotationSequence": [
+      {
+        "GraphicType": "POLYLINE",
+        "GraphicData": [
+          200,
+          200,
+          400,
+          200,
+          400,
+          350,
+          200,
+          350,
+          200,
+          200
+        ],
+        "GraphicFilled": "Y",
+        "TextValue": "Region of Interest"
+      },
+      {
+        "GraphicType": "CIRCLE",
+        "GraphicData": [
+          640,
+          390,
+          40
+        ],
+        "GraphicFilled": "N",
+        "TextValue": "Suspicious Area"
+      }
+    ]
+  },
+  "PathologyExtensions": {
+    "ScannerManufacturer": "ACME Digital Pathology",
+    "ScannerModelName": "ACME WSI Scanner 3000",
+    "ScannerSerialNumber": "WSI30000123",
+    "ScanDate": "20250511",
+    "ScanTime": "121314",
+    "MagnificationFactor": "40x",
+    "LensNumericalAperture": "0.95",
+    "PixelSpacing": "0.25",
+    "FocusQualityScore": "0.92",
+    "StainQualityScore": "0.88",
+    "TissueDetectedPercentage": "76.4"
+  },
+  "SOPCommonModule": {
+    "SOPClassUID": "1.2.840.10008.5.1.4.1.1.77.1.6",
+    "SOPInstanceUID": "1.2.840.10008.1.2.3.4.20250511121314.320202"
+  }
+}
