@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/beyond-dicom-supplement/interactive-viz/static/css/main.4d70ed3f.css",
+    "main.js": "/beyond-dicom-supplement/interactive-viz/static/js/main.010e9181.js",
+    "static/js/453.deeb1e3d.chunk.js": "/beyond-dicom-supplement/interactive-viz/static/js/453.deeb1e3d.chunk.js",
+    "index.html": "/beyond-dicom-supplement/interactive-viz/index.html",
+    "main.4d70ed3f.css.map": "/beyond-dicom-supplement/interactive-viz/static/css/main.4d70ed3f.css.map",
+    "main.010e9181.js.map": "/beyond-dicom-supplement/interactive-viz/static/js/main.010e9181.js.map",
+    "453.deeb1e3d.chunk.js.map": "/beyond-dicom-supplement/interactive-viz/static/js/453.deeb1e3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d70ed3f.css",
+    "static/js/main.010e9181.js"
+  ]
+}
