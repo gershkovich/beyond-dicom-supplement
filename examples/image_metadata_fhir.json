@@ -1,0 +1,142 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-wsi-report",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "R",
+        "display": "Restricted"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "PATH",
+          "display": "Pathology"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "59847-4",
+        "display": "Pathology Report with Whole Slide Imaging"
+      }
+    ],
+    "text": "Whole Slide Imaging Report"
+  },
+  "subject": {
+    "reference": "Patient/example",
+    "display": "REDACTED"
+  },
+  "effectiveDateTime": "2023-06-01T10:30:00Z",
+  "issued": "2023-06-01T14:45:00Z",
+  "performer": [
+    {
+      "reference": "Practitioner/example-pathologist",
+      "display": "Dr. Jane Smith"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/example-tissue",
+      "display": "Tissue specimen - breast biopsy"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/example-wsi-finding",
+      "display": "Pathology findings"
+    }
+  ],
+  "imagingStudy": [
+    {
+      "reference": "ImagingStudy/example-wsi-study"
+    }
+  ],
+  "media": [
+    {
+      "comment": "Whole Slide Image Reference",
+      "link": {
+        "reference": "Media/example-wsi"
+      }
+    }
+  ],
+  "conclusion": "Invasive ductal carcinoma, grade 2, ER+/PR+, HER2-",
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-US",
+      "title": "Full Pathology Report",
+      "url": "https://example.org/fhir/Binary/example-pathology-report"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/wsi-extension",
+      "extension": [
+        {
+          "url": "scanDevice",
+          "valueReference": {
+            "reference": "Device/example-scanner",
+            "display": "Acme WSI Scanner Model X500"
+          }
+        },
+        {
+          "url": "baseImageUrl",
+          "valueUri": "https://example.org/ome-tiff/slide123456.ome.tiff"
+        },
+        {
+          "url": "maxMagnification",
+          "valueDecimal": 40.0
+        },
+        {
+          "url": "pixelSpacing",
+          "valueQuantity": {
+            "value": 0.25,
+            "unit": "µm",
+            "system": "http://unitsofmeasure.org",
+            "code": "um"
+          }
+        },
+        {
+          "url": "stain",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://example.org/stain-types",
+                "code": "H&E",
+                "display": "Hematoxylin and Eosin"
+              }
+            ]
+          }
+        },
+        {
+          "url": "imageWidth",
+          "valuePositiveInt": 98432
+        },
+        {
+          "url": "imageHeight",
+          "valuePositiveInt": 76544
+        },
+        {
+          "url": "relatedAnnotations",
+          "valueReference": {
+            "reference": "DocumentReference/example-wsi-annotations",
+            "display": "GeoJSON Annotations for WSI"
+          }
+        }
+      ]
+    }
+  ]
+}

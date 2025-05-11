@@ -1,0 +1,43 @@
+# Python virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MacOS files
+.DS_Store
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated content from utilities
+figures/*.png
+figures/*.svg
+figures/*.pdf
+examples/*.png
+examples/*.geojson
+
+# Local development configurations
+.env
+.env.local
+.env.development.local
+
+# Logs
+*.log
