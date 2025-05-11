@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* CSS for the breach visualization component */
+.breach-viz {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header & Container styles */
+.breach-viz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.breach-viz h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.breach-viz h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Chart container */
+.chart-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
+}
+
+.chart-height {
+  height: 400px;
+}
+
+/* Chart selector dropdown */
+.chart-selector {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Insights section */
+.insights-section {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 24px;
+}
+
+.insights-list {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.insights-list li {
+  margin-bottom: 8px;
+}
+
+.insights-list .highlight {
+  font-weight: 500;
+}
+
+/* Tooltip styling for Recharts */
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-tooltip p {
+  margin: 2px 0;
+}
+
+.custom-tooltip .tooltip-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
