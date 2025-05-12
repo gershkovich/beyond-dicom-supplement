@@ -28,6 +28,17 @@ This repository is guided by the following principles:
 - **references/**: Includes bibliographic information in structured formats (BibTeX, CSL-JSON, or Markdown) with DOIs where available
 - **.github/workflows/**: Houses optional CI configurations for testing and validation
 
+## Key Resources from the Paper
+
+### Figures
+
+- [DICOM Architecture Diagram](figures/dicom_diagram.svg) - Visual representation of DICOM architecture and its limitations for pathology imaging
+- [DICOM Architecture (No Legend)](figures/dicom_no-legend.svg) - Clean version of the architecture diagram without legends
+
+### Tables
+
+- [DICOM Conformance Statements Analysis](tables/conformance_statements.md) - Comparison of vendor conformance statements and their capabilities
+
 ## Interactive Visualizations
 
 Explore our interactive data visualizations that highlight key findings from our paper:
