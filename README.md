@@ -34,7 +34,9 @@ This repository is guided by the following principles:
 
 - [DICOM Architecture Diagram](figures/dicom_diagram.svg) - Visual representation of DICOM architecture and its limitations for pathology imaging
 - [DICOM Architecture (No Legend)](figures/dicom_no-legend.svg) - Clean version of the architecture diagram without legends
+- [Breach Reports Pie Chart](figures/chart_2022-05_to_2025-05.png) - OCR - reported healthcare provider data breaches by location and impact in the past three years.
 
+  
 ### Tables
 
 - [DICOM Conformance Statements Analysis](tables/conformance_statements.md) - Comparison of vendor conformance statements and their capabilities
