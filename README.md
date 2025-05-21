@@ -6,7 +6,7 @@ This repository serves as a **structured, modular, interactive supplement** to t
 
 ## Link to the Paper
 
-[Paper DOI: (Add paper DOI when published)] <!-- Replace with actual DOI when available -->
+[Wearing a Fur Coat in the Summertime: Should Digital Pathology Redefine Medical Imaging?](https://www.sciencedirect.com/science/article/pii/S2153353925000355?via%3Dihub#:~:text=https%3A//doi.org/10.1016/j.jpi.2025.100450)
 
 ## Repository Goals
 
@@ -36,7 +36,6 @@ This repository is guided by the following principles:
 - [DICOM Architecture (No Legend)](figures/dicom_no-legend.svg) - Clean version of the architecture diagram without legends
 - [Breach Reports Pie Chart](figures/chart_2022-05_to_2025-05.png) - OCR - reported healthcare provider data breaches by location and impact in the past three years.
 
-  
 ### Tables
 
 - [DICOM Conformance Statements Analysis](tables/conformance_statements.md) - Comparison of vendor conformance statements and their capabilities
@@ -56,6 +55,23 @@ The Python utilities in this repository can be used to generate figures, format 
 3. Run the desired script: `python utilities/script_name.py`
 
 Specific usage instructions are documented within each script.
+
+### Risk Heat Map Visualization
+
+The repository includes a risk heat map visualization tool that generates a heat map showing the likelihood and impact of various risks related to DICOM in pathology. This visualization helps in understanding and prioritizing potential risks in digital pathology implementations.
+
+To generate the risk heat map:
+
+```bash
+# Make sure your virtual environment is activated and dependencies are installed
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Run the risk heat map script
+python utilities/risk_heat_map.py
+```
+
+The script will generate a heat map visualization showing various risks positioned according to their likelihood and impact, with color-coding to indicate overall risk levels.
 
 ### Healthcare Breach Visualization
 
@@ -124,6 +140,11 @@ If you use materials from this repository in your research, please cite it as fo
 
 ```bibtex
 Gershkovich, P. et al. (2025). Beyond DICOM Supplement: Wearing a Fur Coat in the Summertime. GitHub Repository: https://github.com/[username]/beyond-dicom-supplement
+```
+Article:
+
+```bibtex
+Gershkovich, P. (2025). Wearing a fur coat in the summertime: Should digital pathology redefine medical imaging? Journal of Pathology Informatics, 100450. https://doi.org/10.1016/j.jpi.2025.100450
 ```
 
 ## Licensing
